@@ -1,0 +1,161 @@
+.menu-bg-header {
+    background-image: url("../images/header-menu.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 25rem;
+    width: 100%;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.menu-bg-header:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.page-title {
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ba-menus {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 6rem 0 3rem 0;
+    gap: 16%;
+}
+
+.ba-menu {
+    width: 36%;
+}
+
+.ba-menu-title1,
+.ba-menu-title2 {
+    position: relative;
+    line-height: 3rem;
+    transition: .66s;
+    opacity: 1;
+    width: 100%;
+}
+
+.ba-menu-title1:after {
+    content: "";
+    position: absolute;
+    width: 8rem;
+    right: 0;
+    top: 150%;
+    height: 3px;
+    background-color: rgb(199, 161, 122);
+}
+
+.ba-menu-title2:after {
+    content: "";
+    position: absolute;
+    width: 8rem;
+    left: 0;
+    top: 150%;
+    height: 3px;
+    background-color: rgb(199, 161, 122);
+}
+
+.ba-flavours {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 6rem 0 2rem 0;
+    flex-wrap: wrap;
+    width: 100%;
+    transition: .66s;
+    opacity: 1;
+}
+
+.ba-flavour {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 1.33rem;
+}
+
+.ba-flavour-left {
+    width: 75%;
+}
+
+.ba-flavour-text {
+    color: rgb(189, 151, 112);
+}
+
+.ba-flavour-right {
+    width: 25%;
+}
+
+.flavours-menu {
+    background-color: rgba(48, 39, 28, .8);
+    width: 100%;
+    padding: 6rem 0 0 0;
+}
+
+.flavours-menu-title {
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.flavours-menu-title:after {
+    content: "";
+    position: absolute;
+    width: 8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 140%;
+    height: 3px;
+    background-color: rgb(199, 161, 122);
+}
+
+.flavours-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 4rem 0;
+}
+
+.flavours-item {
+    width: 23%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+}
+
+.flavours-item-image {
+    width: 100%;
+    padding: 0 4rem;
+}
+
+.flavours-item-image img {
+    width: 100%;
+}
+
+.flavours-item-caption {
+    width: 100%;
+    text-align: center;
+    padding: 1.66rem 0 1.5rem 0;
+}
+
+.flavours-text {
+    width: 100%;
+    text-align: center;
+    padding: 0 .8rem;
+}

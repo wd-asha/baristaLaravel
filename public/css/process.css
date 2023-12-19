@@ -1,0 +1,144 @@
+.process-bg-header {
+    background-image: url("../images/process-img-1.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 25rem;
+    width: 100%;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.process-bg-header:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.process {
+    margin-bottom: 6rem;
+}
+
+.process__step {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 3rem 5rem 1rem;
+}
+
+.step-color {
+    background-color: #F2F0EA;
+    padding: 2rem 3rem 2rem 1rem;
+}
+
+.process__step-left {
+    width: 45%;
+}
+
+.process__step-left img {
+    width: 100%;
+}
+
+.process__step-right {
+    width: 50%;
+    padding: 3rem;
+}
+
+.process-item {
+    width: 100%;
+}
+
+.skills-title {
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.skills-title:after {
+    content: "";
+    position: absolute;
+    width: 8rem;
+    left: 0;
+    top: 180%;
+    height: 3px;
+    background-color: rgb(199, 161, 122);
+}
+
+.skill:not(last-child) {
+    margin-bottom: 2.33rem;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 6px;
+    background-color: #D7D7D7;
+    margin-top: .5rem;
+    position: relative;
+}
+
+.skill-bar:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 6px;
+    background-color: rgb(179, 141, 102);
+}
+
+.skill-bar1:before {
+    width: 87%;
+}
+.skill-bar2:before {
+    width: 72%;
+}
+
+.skill-bar:after {
+    position: absolute;
+    top: -1.33rem;
+    color: rgb(0, 0, 0);
+    font-family: 'Oswald-Regular', sans-serif;
+    font-weight: 600;
+    font-size: .9rem;
+    line-height: .9rem;
+}
+
+.skill-bar1:after {
+    content: "92 %";
+    left: 84%;
+}
+.skill-bar2:after {
+    content: "67 %";
+    left: 69%;
+}
+
+.process-title {
+    position: relative;
+    line-height: 3rem;
+    transition: .66s;
+    opacity: 1;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.process-title:after {
+    content: "";
+    position: absolute;
+    width: 8rem;
+    left: 0;
+    top: 150%;
+    height: 3px;
+    background-color: rgb(199, 161, 122);
+}
+
+.process-p {
+    margin-bottom: 2rem;
+}
+
+.process-action {
+    padding-top: 1rem;
+}
+

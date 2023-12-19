@@ -1,0 +1,175 @@
+.booking-bg-header {
+    background-image: url("../images/header-booking.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 25rem;
+    width: 100%;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.booking-bg-header:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.booking {
+    background-color: #EAE7DE;
+    padding: 6rem 0;
+}
+
+.booking-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.booking-text {
+    width: 50%;
+}
+
+.booking-title {
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.booking-title:after {
+    content: "";
+    position: absolute;
+    width: 8rem;
+    left: 0;
+    top: 180%;
+    height: 3px;
+    background-color: rgb(199, 161, 122);
+}
+
+.booking-images {
+    width: 50%;
+    position: relative;
+    text-align: right;
+}
+
+.booking-form {
+    width: 100%;
+    padding: 4rem 0 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.booking-select {
+    font-family: 'Merriweather-Italic', sans-serif;
+    font-size: .8rem;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    background-color: white;
+    margin-right: .2rem;
+    cursor: pointer;
+    width: 80%;
+}
+
+.ba-option {
+    font-family: 'Merriweather-Italic', sans-serif;
+    font-size: .8rem;
+}
+
+.select-element {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 17%;
+    position: relative;
+}
+
+.select-image {
+    height: 3rem;
+    width: 3rem;
+    padding: .66rem;
+    background-color: white;
+}
+
+.select-image img {
+    width: 100%;
+}
+
+.build {
+    padding: 6rem 0 4rem 0;
+    background-color: #FFFFFF;
+}
+
+.build-title {
+    position: relative;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+
+.build-title:after {
+    content: "";
+    position: absolute;
+    width: 8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 180%;
+    height: 3px;
+    background-color: rgb(199, 161, 122);
+}
+
+.build-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.build-box-left {
+    width: 35%;
+}
+
+.build-box-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 2.66rem;
+}
+
+.build-box-middle {
+    width: 30%;
+    padding: 0 1rem;
+}
+
+.build-box-middle img {
+    width: 100%;
+}
+
+.build-box-right {
+    width: 35%;
+}
+
+.build-box-left-caption {
+    padding: 0 0 1rem 0;
+}
+
+.build-box-left-text,
+.build-box-right-text {
+    width: 75%;
+}
+
+.build-box-left-image,
+.build-box-right-image {
+    width: 25%;
+    padding: 0 1.5rem;
+}
+
+.build-box-left-image img,
+.build-box-right-image img {
+    width: 100%;
+}

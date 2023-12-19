@@ -1,0 +1,138 @@
+.bg-footer {
+    width: 100%;
+    background-color: black;
+}
+
+.footer {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 4rem 0 3rem 0;
+}
+
+.footer-item {
+    width: 18%;
+}
+
+/* Item1 */
+.footer-days {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.footer-left-title {
+    width: 100%;
+    padding-bottom: 3rem;
+    text-align: left;
+    color: white;
+}
+
+.footer-day {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+}
+
+.footer-name-day {
+    width: 50%;
+    text-align: left;
+    color: rgba(255, 255, 255, .9);
+    font-family: 'Oswald-Regular', sans-serif;
+    font-weight: 400;
+
+}
+
+.footer-hours-day {
+    width: 50%;
+    text-align: right;
+    color: rgba(255, 255, 255, .7);
+    font-family: 'Oswald-Regular', sans-serif;
+}
+/* end item1 */
+
+/* Item2 */
+.footer-posts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer-post {
+    width: 100%;
+    padding-bottom: .66rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(189, 151, 112, .66);
+}
+
+.footer-post-title {
+    color: white;
+    transition: .5s;
+    text-decoration: none;
+    font-weight: 400;
+    display: block;
+    margin-bottom: .66rem;
+}
+
+.footer-post-title:hover {
+    color: rgb(189, 151, 112);
+}
+
+.footer-post-date {
+    color: rgb(189, 151, 112);
+    font-weight: 400;
+    font-size: .8rem;
+}
+
+.footer-location-name1 {
+    color: white;
+    padding-bottom: .8rem;
+}
+.footer-location-name2 {
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: .8rem;
+}
+
+.footer-form {
+    padding-top: 2.1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.footer-input {
+    font-family: 'Oswald-Regular', sans-serif;
+    font-weight: 400;
+    color: white;
+    background-color: transparent;
+    padding: .4rem .5rem;
+    border: 1px solid rgba(255, 255, 255, .8);
+    outline: none;
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+}
+
+.footer-submit {
+    color: white;
+    background-color: rgba(199, 161, 122, 1);
+    padding: .79rem .66rem .66rem .66rem;
+    border: none;
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    cursor: pointer;
+    transition: .5s;
+}
+.footer-submit:hover {
+    background-color: rgba(199, 161, 122, .8);
+}

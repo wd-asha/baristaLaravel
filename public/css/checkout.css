@@ -1,0 +1,68 @@
+.checkout-content {
+    padding: 3rem 0 0 0;
+    width: 100%;
+}
+
+.checkout-caption {
+    font-family: 'Merriweather-Italic', sans-serif;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: rgba(80, 80, 80, .9);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #c7a17a;
+    cursor: pointer;
+}
+
+.checkout-slider {
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+.checkout-caption_span {
+    font-family: 'Merriweather-Italic', sans-serif;
+    font-size: 1rem;
+    line-height: 1rem;
+    opacity: 1;
+    cursor: pointer;
+    color: #c7a17a;
+    transition: .5s;
+}
+
+.checkout-caption_span:hover {
+    opacity: .8;
+}
+
+.checkout-form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.checkout_form-control {
+    padding: 1rem 0 0 0;
+    width: 51%;
+}
+
+.checkout-input {
+    font-family: 'Oswald-Regular', sans-serif;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: .55rem .66rem .8rem .66rem;
+    color: rgb(179, 141, 102);
+    border: 1px solid rgba(0, 0, 0, .2);
+    outline: none;
+}
+
+.remembeme {
+    font-size: .8rem;
+}
+
+.checkout-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem 0 0 0;
+}
+

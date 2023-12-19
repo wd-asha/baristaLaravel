@@ -1,0 +1,182 @@
+.cart-content {
+    padding: 5rem 0 4rem 0;
+    width: 100%;
+}
+
+.cart-list-products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    margin-bottom: 1rem;
+}
+
+.cart-remove {
+    width: 9.66%;
+    text-decoration: none;
+}
+
+.cart-remove span {
+    font-size: 1.5rem;
+    padding: 0 .6rem;
+    color: red;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    text-decoration: none;
+}
+
+.cart-remove span:hover {
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.cart-image {
+    width: 13.66%;
+    font-family: 'Merriweather-Italic', sans-serif;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 1.33rem .66rem 1.33rem 1.66rem;
+    text-align: center;
+}
+
+.cart-image img {
+    width: 100%;
+}
+
+.cart-product {
+    width: 19.66%;
+    padding: 1.33rem .66rem;
+    font-family: 'Merriweather-Italic', sans-serif;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+.cart-product-link {
+    font-family: 'Merriweather-Italic', sans-serif;
+    font-size: 1rem;
+    line-height: 1rem;
+    text-decoration: none;
+    transition: .5s;
+    color: rgba(0, 0, 0, 1);
+}
+
+.cart-product-link:hover {
+    color: rgb(179, 141, 102);
+}
+
+.cart-price {
+    width: 17.66%;
+    font-family: 'Merriweather-Italic', sans-serif;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 1.33rem .66rem;
+}
+
+.cart-quantity {
+    width: 21.66%;
+    font-family: 'Merriweather-Italic', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    padding: 1.33rem .66rem;
+}
+
+.qty-minus {
+    display: inline-block;
+    padding: 0 1.66rem 0 .33rem;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+}
+
+.qty-plus {
+    display: inline-block;
+    padding: 0 .66rem 0 0;
+    cursor: pointer;
+    transition: .5s;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    transform: translateY(.15rem);
+}
+
+.qty-minus:hover,
+.qty-plus:hover {
+    color: rgb(179, 141, 102);
+}
+
+.qty {
+    font-family: 'Merriweather-Italic', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    width: 2.33rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; // Yeah, yeah everybody write about it
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+.cart-total {
+    width: 17.66%;
+    font-family: 'Merriweather-Italic', sans-serif;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 1.33rem .66rem;
+    text-align: right;
+}
+
+.coupon-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 3rem 0;
+}
+
+.coupon-input {
+    font-family: 'Oswald-Regular', sans-serif;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: .55rem .66rem .8rem .66rem;
+    color: rgb(179, 141, 102);
+    border: 1px solid rgba(0, 0, 0, .2);
+    outline: none;
+}
+
+.total-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total-box span,
+.cart-subtotal span {
+    font-family: 'Merriweather-Italic', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    text-transform: none;
+    font-weight: 400;
+    margin-left: .33rem;
+    letter-spacing: 0;
+}
+
+.visible-element {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.hide-element {
+    display: none;
+}
+

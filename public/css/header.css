@@ -1,0 +1,240 @@
+/***
+@media (max-width: 1280px)
+font-size: calc(.7rem + (1.2 - .7) * ((100vw - 20rem) / (80 - 20)));
+***/
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    backdrop-filter: blur(5px) saturate(180%);
+    -webkit-backdrop-filter: blur(5px) saturate(180%);
+    background-color: rgba(199, 161, 122, .5);
+}
+
+.header-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+@media (max-width: 1280px) {
+    .header-box {
+        padding: calc(.33rem + (1 - .33) * ((100vw - 20rem) / (80 - 20))) 0;
+    }
+}
+
+
+.logo {
+    text-align: left;
+}
+
+.logo h2 {
+    color: white;
+}
+
+.burger-box {
+    text-align: right;
+    width: 2rem;
+    height: 3rem;
+}
+@media (max-width: 1280px) {
+    .burger-box {
+        width: calc(1.7rem + (2 - 1.7) * ((100vw - 20rem) / (80 - 20)));
+        height: calc(2.7rem + (3 - 2.7) * ((100vw - 20rem) / (80 - 20)));
+    }
+}
+
+#burger {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: .5s;
+    opacity: .8;
+    transform: translateY(.75rem);
+    z-index: 120;
+}
+@media (max-width: 1280px) {
+    #burger {
+        transform: translateY(calc(.43rem + (.75 - .43) * ((100vw - 20rem) / (80 - 20))));
+    }
+}
+
+#burger:hover {
+    opacity: 1;
+}
+
+.burger-bar:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -11px;
+    width: 100%;
+    background-color: white;
+    border-radius: 2px;
+    height: 5px;
+}
+
+.burger-bar {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    background-color: white;
+    border-radius: 2px;
+    height: 5px;
+}
+
+.burger-bar:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 11px;
+    width: 100%;
+    background-color: white;
+    border-radius: 2px;
+    height: 5px;
+}
+
+.nav-panel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #E6E2D9;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    z-index: 100;
+}
+
+.nav-header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+
+.nav-header-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+@media (max-width: 1280px) {
+    .nav-header-box {
+        padding: calc(.2rem + (1 - .2) * ((100vw - 20rem) / (80 - 20))) 0;
+    }
+}
+
+.nav-logo {
+    text-align: left;
+}
+
+.nav-burger-box {
+    text-align: right;
+    width: 2.1rem;
+    height: 3rem;
+}
+
+#navBurger {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: .5s;
+    opacity: .7;
+    transform: translate(.5rem, .75rem);
+    z-index: 130;
+}
+@media (max-width: 1280px) {
+    #navBurger {
+        transform: translate(calc(.6rem + (.5 - .6) * ((100vw - 20rem) / (80 - 20))), calc(.43rem + (.75 - .43) * ((100vw - 20rem) / (80 - 20))));
+    }
+}
+
+#navBurger:hover {
+    opacity: 1;
+}
+
+.nav-burger-bar:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -11px;
+    width: 100%;
+    background-color: black;
+    border-radius: 2px;
+    height: 5px;
+    transform-origin: top left;
+    transform: rotate(43deg);
+}
+
+.nav-burger-bar {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 2px;
+    height: 5px;
+}
+
+.nav-burger-bar:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 11px;
+    width: 100%;
+    background-color: black;
+    border-radius: 2px;
+    height: 5px;
+    transform-origin: bottom left;
+    transform: rotate(-43deg);
+}
+
+.nav {
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    width: 100%;
+}
+
+.nav-item {
+    padding: .66rem 0;
+    width: 25%;
+    margin: 0 auto;
+    transition: .5s;
+}
+@media (max-width: 1280px) {
+    .nav-item {
+        padding: calc(0rem + (.66 - 0) * ((100vw - 20rem) / (80 - 20))) 0;
+    }
+}
+
+.nav-link {
+    text-decoration: none;
+    transition: .5s;
+}
+
+.nav-link:hover {
+    color: rgb(199, 161, 122);
+}
+
+.showPanel {
+    opacity: 1;
+    visibility: visible;
+}
+
+.leftPos {
+    opacity: 0;
+    transform: translateX(-5rem);
+}
