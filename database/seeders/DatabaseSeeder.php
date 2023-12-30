@@ -23,7 +23,7 @@ class DatabaseSeeder extends Seeder
             /*BookTimesTableSeeder::class,*/
             /*PostsTableSeeder::class,*/
             /*CategoryTableSeeder::class,*/
-            ProductsTableSeeder::class
+            /*ProductsTableSeeder::class*/
         ]);
 
     }

@@ -1,4 +1,4 @@
-<h4>Coffee Supreme v.2.0</h4>
+<h4>Barista v.2.0</h4>
 <p>To test the program, you will need a installing composer on your local computer</p>
 <p>To test the program, you will need a running web server (for example, an OpenServer) on your local computer</p>
 <p>System requirements:<br>
