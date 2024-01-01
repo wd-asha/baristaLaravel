@@ -15,9 +15,9 @@
                 <div class="logo">
                     <h2 class="ba-h2">BARISTA</h2>
                 </div>
-                <a href="cart.html" class="cart">
+                <a href="{{ route('carts') }}" class="cart">
                     <img src="{{asset('images/bag.png')}}" alt="">
-                    <span class="cart-count ba-h4">2</span>
+                    <span class="cart-count ba-h4">{{ Cart::count() }}</span>
                 </a>
                 <div class="burger-box">
                     <div id="burger">
@@ -165,31 +165,7 @@
 
 <script src="{{asset('js/jquery.js')}}"></script>
 <script src="{{asset('js/burger.js')}}"></script>
-<script src="{{asset('js/filter.js')}}"></script>
-<script src="{{asset('js/search.js')}}"></script>
-<script src="{{asset('js/tinysort.js')}}"></script>
-<script>
-    function changeSortBy(param) {
-        let globo = document.querySelector('.globo-dropdown-custom__options');
 
-        if(param === "price-ascending") {
-            tinysort.defaults.order = 'asc';
-            tinysort('.shop-item', {attr: 'data-price'});
-        }
-        if(param === "price-descending") {
-            tinysort.defaults.order = 'desc';
-            tinysort('.shop-item', {attr: 'data-price'});
-        }
-        if(param === "title-ascending") {
-            tinysort.defaults.order = 'asc';
-            tinysort('.shop-item', {attr: 'data-name'});
-        }
-        if(param === "title-descending") {
-            tinysort.defaults.order = 'desc';
-            tinysort('.shop-item', {attr: 'data-name'});
-        }
-    }
-</script>
 <script>
     let addCards = document.querySelectorAll(".add-cart");
     addCards.forEach(function (addCard) {
@@ -199,5 +175,29 @@
     })
 
 </script>
+
+<script>
+    let qtyMinus = document.querySelector('#qtyMinus');
+    let qtyPlus = document.querySelector('#qtyPlus');
+    let qtyCount = document.querySelector('#qtyNum');
+    let qtyH = document.querySelector('#qtyH');
+
+    console.log(qtyMinus.textContent);
+    console.log(Number(qtyCount.textContent));
+    console.log(qtyPlus.textContent);
+
+    qtyMinus.addEventListener('click', function (item) {
+        if(Number(qtyCount.textContent) > 1) {
+            qtyCount.textContent = Number(qtyCount.textContent) - 1;
+            qtyH.value = Number(qtyH.value) - 1;
+        }
+    });
+
+    qtyPlus.addEventListener('click', function (item) {
+        qtyCount.textContent = Number(qtyCount.textContent) + 1;
+        qtyH.value = Number(qtyH.value) + 1;
+    });
+</script>
+
 </body>
 </html>

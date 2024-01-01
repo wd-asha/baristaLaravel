@@ -16,13 +16,15 @@
                     <div class="single-product-desc">
                         <p class="ba-p">{{ $product->about }}</p>
                     </div>
-                    <div class="single-qty">
-                        <div class="single-qty-minus" id="qty-minus">–</div>
-                        <div class="single-qty-count" id="qty-num">1</div>
-                        <div class="single-qty-plus" id="qty-plus">+</div>
-                        <a href="#" class="single-qty-link ba-btn-color">ADD TO CART <span class="btn-arr">&rarr;</span></a>
+                    <form action="{{route('cart.add', $product->id)}}" method="POST" class="single-qty">
+                        @csrf
+                        <div class="single-qty-minus" id="qtyMinus">–</div>
+                        <div class="single-qty-count" id="qtyNum">1</div>
+                        <div class="single-qty-plus" id="qtyPlus">+</div>
+                        <input type="hidden" name="qtyH" value="1" id="qtyH">
+                        <button type="submit" class="single-qty-link ba-btn-color">ADD TO CART <span class="btn-arr">&rarr;</span></button>
                         <a href="{{ route('shop') }}" class="single-qty-link ba-btn-color">GO TO SHOP <span class="btn-arr">&rarr;</span></a>
-                    </div>
+                    </form>
                     <div class="single-product-option">
                         <div class="grinding">
                             <div class="ba-h5">SKU:<span class="ba-p">{{ $product->sku }}</span></div>
@@ -48,7 +50,7 @@
                 <div class="related-title ba-h3">Related products</div>
 
                 <div class="related-item" data-price="79" data-name="Paper Bag">
-                    <a href="" class="shop-item-link">
+                    <a href="{{ route('product', 2) }}" class="shop-item-link">
                         <div class="shop-item-image">
                             <img src="{{asset('images/product-image-2-500x500.jpg')}}" alt="">
                             <div class="add-cart">
@@ -56,7 +58,7 @@
                                     <div class="add-cart-image">
                                         <img src="{{asset('images/bag.png')}}" alt="">
                                     </div>
-                                    <div class="add-cart-text ba-h5">ADD TO CART</div>
+                                    <div class="add-cart-text_single ba-h5">ADD TO CART</div>
                                 </a>
                             </div>
                             <div class="go-cart">
@@ -74,7 +76,7 @@
                 </div>
 
                 <div class="related-item" data-price="46" data-name="TEA CAP">
-                    <a href="" class="shop-item-link">
+                    <a href="{{ route('product', 11) }}" class="shop-item-link">
                         <div class="shop-item-image">
                             <img src="{{asset('images/product-image-11-500x500.jpg')}}" alt="">
                             <div class="add-cart">
@@ -82,7 +84,7 @@
                                     <div class="add-cart-image">
                                         <img src="{{asset('images/bag.png')}}" alt="">
                                     </div>
-                                    <div class="add-cart-text ba-h5">ADD TO CART</div>
+                                    <div class="add-cart-text_single ba-h5">ADD TO CART</div>
                                 </a>
                             </div>
                             <div class="go-cart">
@@ -100,7 +102,7 @@
                 </div>
 
                 <div class="related-item" data-price="29" data-name="CAFE BAGS">
-                    <a href="" class="shop-item-link">
+                    <a href="{{ route('product', 10) }}" class="shop-item-link">
                         <div class="shop-item-image">
                             <img src="{{asset('images/product-image-10-500x500.jpg')}}" alt="">
                             <div class="add-cart">
@@ -108,7 +110,7 @@
                                     <div class="add-cart-image">
                                         <img src="{{asset('images/bag.png')}}" alt="">
                                     </div>
-                                    <div class="add-cart-text ba-h5">ADD TO CART</div>
+                                    <div class="add-cart-text_single ba-h5">ADD TO CART</div>
                                 </a>
                             </div>
                             <div class="go-cart">
@@ -126,7 +128,7 @@
                 </div>
 
                 <div class="related-item" data-price="71" data-name="COFFEE POT">
-                    <a href="" class="shop-item-link">
+                    <a href="{{ route('product', 4) }}" class="shop-item-link">
                         <div class="shop-item-image">
                             <img src="{{asset('images/product-image-4-500x500.jpg')}}" alt="">
                             <div class="add-cart">
@@ -134,7 +136,7 @@
                                     <div class="add-cart-image">
                                         <img src="{{asset('images/bag.png')}}" alt="">
                                     </div>
-                                    <div class="add-cart-text ba-h5">ADD TO CART</div>
+                                    <div class="add-cart-text_single ba-h5">ADD TO CART</div>
                                 </a>
                             </div>
                             <div class="go-cart">

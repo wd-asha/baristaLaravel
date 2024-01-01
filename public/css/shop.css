@@ -181,6 +181,15 @@
     width: auto;
 }
 
+.add-cart-text_single {
+    text-decoration: none;
+    color: white;
+    margin-left: .33rem;
+    display: inline-block;
+    width: auto;
+    padding: 1rem 0;
+}
+
 .go-cart-text {
     text-decoration: none;
     color: white;
