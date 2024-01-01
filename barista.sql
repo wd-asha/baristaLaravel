@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Дек 19 2023 г., 19:59
+-- Время создания: Янв 01 2024 г., 14:36
 -- Версия сервера: 8.0.24
 -- Версия PHP: 8.0.8
 
@@ -179,12 +179,30 @@ CREATE TABLE `menu_items` (
 --
 
 INSERT INTO `menu_items` (`id`, `title`, `about`, `price`, `category_menu_id`, `created_at`, `updated_at`) VALUES
-(1, 'CAFFE LATTE', 'Fresh brewed coffee and steamed milk', 2.95, 1, NULL, NULL),
-(2, 'CAFFE MOCHA', 'Espresso With Milk, and Whipped Cream', 3.67, 1, NULL, NULL),
-(3, 'WHITE CHOKOLATE MOCHA', 'Espresso, White Chocolate, Milk, Ice and Cream', 2.79, 1, NULL, NULL),
-(4, 'Iced Caramel Latte', 'Espresso, Milk, Ice and Caramel Sauce', 4.67, 2, NULL, NULL),
-(5, 'Espresso Macchiato', 'Rich Espresso With Milk and Foam', 2.98, 2, NULL, NULL),
-(6, 'Caramel Macchiato', 'Espresso, vanilla-flavored syrup and milk', 2.54, 2, NULL, NULL);
+(7, 'CAFFE LATTE', 'Fresh brewed coffee and steamed milk', 2.95, 1, NULL, NULL),
+(8, 'CAFFE MOCHA', 'Espresso With Milk, and Whipped Cream', 3.67, 1, NULL, NULL),
+(9, 'WHITE CHOKOLATE MOCHA', 'Espresso, White Chocolate, Milk, Ice and Cream', 2.79, 1, NULL, NULL),
+(10, 'CAFFE AMERICANO', 'Espresso Shots and Light Layer of Crema', 3.06, 1, NULL, NULL),
+(11, 'CAPPUCCINO', 'Espresso, and Smoothed Layer of Foam', 4.03, 1, NULL, NULL),
+(12, 'VANILLA LATTE', 'Espresso Milk With Flavor,and Cream', 3.65, 1, NULL, NULL),
+(13, 'Iced Gingerbread Latte', 'Espresso, Milk, Ice, and Gingerbread Flavor', 3.92, 1, NULL, NULL),
+(14, 'Iced Caffe Mocha', 'Espresso, bittersweet mocha sauce, milk and ice', 2.60, 1, NULL, NULL),
+(15, 'Iced Smoked Latte', 'Espresso, ice, with smoked butterscotch', 3.05, 1, NULL, NULL),
+(16, 'Caramel Macchiato', 'Espresso, vanilla-flavored syrup and milk', 2.54, 1, NULL, NULL),
+(17, 'Espresso Macchiato', 'Rich Espresso With Milk and Foam', 2.98, 1, NULL, NULL),
+(18, 'Iced Caramel Latte', 'Espresso, Milk, Ice and Caramel Sauce', 4.67, 1, NULL, NULL),
+(19, 'Iced Caramel Latte', 'Espresso, Milk, Ice and Caramel Sauce', 4.67, 2, NULL, NULL),
+(20, 'Espresso Macchiato', 'Rich Espresso With Milk and Foam', 2.98, 2, NULL, NULL),
+(21, 'Caramel Macchiato', 'Espresso, vanilla-flavored syrup and milk', 2.54, 2, NULL, NULL),
+(22, 'Iced Smoked Latte', 'Espresso, ice, with smoked butterscotch', 3.05, 2, NULL, NULL),
+(23, 'Iced Caffe Mocha', 'Espresso, bittersweet mocha sauce, milk and ice', 2.60, 2, NULL, NULL),
+(24, 'Iced Gingerbread Latte', 'Espresso, Milk, Ice, and Gingerbread Flavor', 3.92, 2, NULL, NULL),
+(25, 'VANILLA LATTE', 'Espresso Milk With Flavor,and Cream', 3.65, 2, NULL, NULL),
+(26, 'CAPPUCCINO', 'Espresso, and Smoothed Layer of Foam', 4.03, 2, NULL, NULL),
+(27, 'CAFFE AMERICANO', 'Espresso Shots and Light Layer of Crema', 3.06, 2, NULL, NULL),
+(28, 'WHITE CHOKOLATE MOCHA', 'Espresso, White Chocolate, Milk, Ice and Cream', 2.79, 2, NULL, NULL),
+(29, 'CAFFE MOCHA', 'Espresso With Milk, and Whipped Cream', 3.67, 2, NULL, NULL),
+(30, 'CAFFE LATTE', 'Fresh brewed coffee and steamed milk', 2.95, 2, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -345,12 +363,12 @@ INSERT INTO `products` (`id`, `title`, `category_id`, `price`, `desc`, `about`, 
 (4, 'Coffee Pot', 3, 69, 'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et. Mea facilisis urbanitas moderatius id. Vis ei rationibus definiebas, eu qui purto zril laoreet. Ex error omnium interpretaris pro, alia illum ea vim.', 'Vis ei rationibus definiebas, eu qui purto zril laoreet. Ex error omnium interpretaris pro, alia illum ea vim. Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et', '09', 300, '3 × 60 × 80 in', 1, 9, 'media/shop/1784825432132665.jpg', '2023-12-09 12:16:13', '2023-12-14 05:46:41'),
 (5, 'Tea Pot', 3, 54, 'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et. Mea facilisis urbanitas moderatius id. Vis ei rationibus definiebas, eu qui purto zril laoreet. Ex error omnium interpretaris pro, alia illum ea vim.', 'Vis ei rationibus definiebas, eu qui purto zril laoreet. Ex error omnium interpretaris pro, alia illum ea vim. Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et', '08', 300, '3 × 60 × 80 in', 1, 8, 'media/shop/1784825513947664.jpg', '2023-12-09 12:17:31', '2023-12-14 05:52:40'),
 (6, 'Paper Cap', 4, 31, 'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et. Mea facilisis urbanitas moderatius id. Vis ei rationibus definiebas, eu qui purto zril laoreet. Ex error omnium interpretaris pro, alia illum ea vim', 'Vis ei rationibus definiebas, eu qui purto zril laoreet. Ex error omnium interpretaris pro, alia illum ea vim. Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et', '07', 300, '3 × 60 × 80 in', 1, 10, 'media/shop/1784825580922924.jpg', '2023-12-09 12:18:35', '2023-12-10 09:29:57'),
-(7, 'Choco Bites', 4, 63, NULL, NULL, NULL, NULL, NULL, 1, 5, 'media/shop/1784825688681126.jpg', '2023-12-09 12:20:18', '2023-12-09 12:20:18'),
-(8, 'Grownd Coffee', 1, 31, NULL, NULL, NULL, NULL, NULL, 1, 5, 'media/shop/1784825738836155.jpg', '2023-12-09 12:21:06', '2023-12-09 12:21:06'),
-(9, 'Moka Pot', 3, 18, NULL, NULL, NULL, NULL, NULL, 1, 10, 'media/shop/1784825794300487.jpg', '2023-12-09 12:21:59', '2023-12-09 12:21:59'),
-(10, 'Cafe bags', 4, 29, NULL, NULL, NULL, NULL, NULL, 1, 10, 'media/shop/1784825843313156.jpg', '2023-12-09 12:22:46', '2023-12-09 12:22:46'),
-(11, 'Tea Cap', 2, 46, NULL, NULL, NULL, NULL, NULL, 1, 8, 'media/shop/1784825890344941.jpg', '2023-12-09 12:23:30', '2023-12-09 12:23:30'),
-(12, 'Recycled Bags', 4, 35, NULL, NULL, NULL, NULL, NULL, 1, 4, 'media/shop/1784825936896364.jpg', '2023-12-09 12:24:15', '2023-12-09 12:24:15');
+(7, 'Choco Bites', 4, 63, 'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et. Mea facilisis urbanitas moderatius id. Vis ei rationibus definiebas, eu qui purto zril laoreet. Ex error omnium interpretaris pro, alia illum ea vim', 'Vis ei rationibus definiebas, eu qui purto zril laoreet. Ex error omnium interpretaris pro, alia illum ea vim. Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et', '06', 100, '30 × 60 × 80 in', 1, 5, 'media/shop/1784825688681126.jpg', '2023-12-09 12:20:18', '2023-12-09 12:20:18'),
+(8, 'Grownd Coffee', 1, 31, 'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et. Mea facilisis urbanitas moderatius id. Vis ei rationibus definiebas, eu qui purto zril laoreet. Ex error omnium interpretaris pro, alia illum ea vim', 'Vis ei rationibus definiebas, eu qui purto zril laoreet. Ex error omnium interpretaris pro, alia illum ea vim. Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et', '05', 600, '30 × 60 × 80 in', 1, 5, 'media/shop/1784825738836155.jpg', '2023-12-09 12:21:06', '2023-12-09 12:21:06'),
+(9, 'Moka Pot', 3, 18, 'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et. Mea facilisis urbanitas moderatius id. Vis ei rationibus definiebas, eu qui purto zril laoreet. Ex error omnium interpretaris pro, alia illum ea vim', 'Vis ei rationibus definiebas, eu qui purto zril laoreet. Ex error omnium interpretaris pro, alia illum ea vim. Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et', '04', 200, '30 × 60 × 60 in', 1, 10, 'media/shop/1784825794300487.jpg', '2023-12-09 12:21:59', '2023-12-09 12:21:59'),
+(10, 'Cafe bags', 4, 29, 'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et. Mea facilisis urbanitas moderatius id. Vis ei rationibus definiebas, eu qui purto zril laoreet. Ex error omnium interpretaris pro, alia illum ea vim', 'Vis ei rationibus definiebas, eu qui purto zril laoreet. Ex error omnium interpretaris pro, alia illum ea vim. Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et', '03', 400, '30 × 60 × 60 in', 1, 10, 'media/shop/1784825843313156.jpg', '2023-12-09 12:22:46', '2023-12-09 12:22:46'),
+(11, 'Tea Cap', 2, 46, 'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et. Mea facilisis urbanitas moderatius id. Vis ei rationibus definiebas, eu qui purto zril laoreet. Ex error omnium interpretaris pro, alia illum ea vim', 'Vis ei rationibus definiebas, eu qui purto zril laoreet. Ex error omnium interpretaris pro, alia illum ea vim. Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et', '02', 400, '50 × 50 × 50 in', 1, 8, 'media/shop/1784825890344941.jpg', '2023-12-09 12:23:30', '2023-12-09 12:23:30'),
+(12, 'Recycled Bags', 4, 35, 'Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et. Mea facilisis urbanitas moderatius id. Vis ei rationibus definiebas, eu qui purto zril laoreet. Ex error omnium interpretaris pro, alia illum ea vim', 'Vis ei rationibus definiebas, eu qui purto zril laoreet. Ex error omnium interpretaris pro, alia illum ea vim. Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei est. Eos ei nisl graecis, vix aperiri consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et', '01', 600, '30 × 60 × 80 in', 1, 4, 'media/shop/1784825936896364.jpg', '2023-12-09 12:24:15', '2023-12-09 12:24:15');
 
 -- --------------------------------------------------------
 
@@ -547,7 +565,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT для таблицы `menu_items`
 --
 ALTER TABLE `menu_items`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT для таблицы `migrations`
